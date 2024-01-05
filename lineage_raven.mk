@@ -50,7 +50,7 @@ TARGET_INCLUDE_MATLOG := false
 TARGET_DEFAULT_ADB_ENABLED := false
 
 # Maintainer
-ALPHA_BUILD_TYPE := Unoficcial
+ALPHA_BUILD_TYPE := Unofficial
 ALPHA_MAINTAINER := opensourcefreak
 
 # Artifact path requirement fix
