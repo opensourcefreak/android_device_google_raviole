@@ -70,3 +70,6 @@ system/lib64/libmpbase.so                                               \
 system/priv-app/FaceUnlockService/FaceUnlockService.apk
 
 $(call inherit-product, vendor/google/raven/raven-vendor.mk)
+
+# PixelParts
+include packages/apps/PixelParts/device.mk
