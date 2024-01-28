@@ -30,3 +30,25 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/raven/raven:14/UQ1A.240105.002/11129216:user/release-keys
 
 $(call inherit-product, vendor/google/raven/raven-vendor.mk)
+
+# crDroid
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
+#Device has UDFPS:
+TARGET_HAS_UDFPS := true
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST +=	\
+system/etc/default-permissions/default_permissions_co.aospa.sense.xml	\
+system/etc/permissions/android.hardware.biometrics.face.xml \
+system/etc/permissions/privapp_whitelist_co.aospa.sense.xml \
+system/etc/sysconfig/hiddenapi-whitelist-co.aospa.sense.xml \
+system/lib64/libFaceDetectCA.so \
+system/lib64/libMegviiUnlock-jni-1.2.so \
+system/lib64/libMegviiUnlock.so \
+system/lib64/libmegface.so \
+system/priv-app/FaceUnlock/FaceUnlock.apk
