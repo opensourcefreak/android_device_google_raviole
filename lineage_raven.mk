@@ -30,3 +30,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/raven/raven:14/UQ1A.240205.002/11224170:user/release-keys
 
 $(call inherit-product, vendor/google/raven/raven-vendor.mk)
+
+# Gapps
+#include vendor/gapps/arm64/arm64-vendor.mk
+
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true

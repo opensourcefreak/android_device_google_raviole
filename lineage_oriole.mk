@@ -30,3 +30,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/oriole/oriole:14/UQ1A.240205.002/11224170:user/release-keys
 
 $(call inherit-product, vendor/google/oriole/oriole-vendor.mk)
+
+
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
