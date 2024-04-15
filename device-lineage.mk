@@ -177,3 +177,29 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-V1-ndk.vendor:64 \
     com.google.hardware.pixel.display-V4-ndk.vendor:64 \
     com.google.hardware.pixel.display-V9-ndk.vendor
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+		system/etc/init/naap-radio.rc \
+		system/etc/init/naap-ssh.rc \
+		system/etc/permissions/android.software.nfc.beam.xml \
+		system/etc/permissions/naap-privapp-permissions.xml \
+		system/etc/sysconfig/naap-power-whitelist.xml \
+		system/etc/textclassifier/actions_suggestions.universal.model \
+		system/etc/textclassifier/lang_id.model \
+		system/etc/textclassifier/textclassifier.en.model \
+		system/etc/textclassifier/textclassifier.universal.model \
+		system/fonts/Arvo-Bold.ttf \
+		system/fonts/Arvo-BoldItalic.ttf \
+		system/fonts/Arvo-Italic.ttf \
+		system/fonts/Arvo-Regular.ttf \
+		system/framework/tcmiface.jar \
+		system/framework/telephony-ext.jar \
+		system/lib/libRSSupport.so \
+		system/lib/libblasV8.so \
+		system/lib/librsjni.so \
+		system/lib/libsepol.so \
+		system/lib64/libRSSupport.so \
+		system/lib64/libblasV8.so \
+		system/lib64/librsjni.so \
+		system/lib64/libsepol.so \
+		system/priv-app/OpenDelta/OpenDelta.apk
