@@ -32,8 +32,20 @@ BUILD_FINGERPRINT := google/raven/raven:14/AP1A.240305.019.A1/11445699:user/rele
 $(call inherit-product, vendor/google/raven/raven-vendor.mk)
 
 # Gapps
-#include vendor/gapps/arm64/arm64-vendor.mk
+include vendor/gapps/arm64/arm64-vendor.mk
 
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+system/etc/default-permissions/default_permissions_co.aospa.sense.xml \
+system/etc/permissions/android.hardware.biometrics.face.xml \
+system/etc/permissions/privapp_whitelist_co.aospa.sense.xml \
+system/etc/sysconfig/hiddenapi-whitelist-co.aospa.sense.xml \
+system/lib64/libFaceDetectCA.so \
+system/lib64/libMegviiUnlock-jni-1.2.so \
+system/lib64/libMegviiUnlock.so \
+system/lib64/libmegface.so \
+system/priv-app/FaceUnlock/FaceUnlock.apk \
+system/priv-app/OmniStyle/OmniStyle.apk
